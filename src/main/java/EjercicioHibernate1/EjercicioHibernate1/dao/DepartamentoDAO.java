@@ -25,13 +25,13 @@ public class DepartamentoDAO {
 	}
 	
 	public static Departamento getDepartamento(Session s, int codigo) {
-		  String hQuery = " from departamento d " + " where d.codigo = :codigoDepartamento";
+		  String hQuery = " from departamento d " + " where d.codigo = :codigo";
 		  Departamento departamento = s.createQuery(hQuery, Departamento.class).setParameter("codigo", codigo).setMaxResults(1).uniqueResult();
 		  return departamento;
 	}
 	
-	public static void borrarDepartamento(Session s, int codigoDepartamento) {
-		Departamento dep = getDepartamento(s, codigoDepartamento);
+	public static void borrarDepartamento(Session s, int codigo) {
+		Departamento dep = getDepartamento(s, codigo);
 		s.delete(dep);
 	}
 	
