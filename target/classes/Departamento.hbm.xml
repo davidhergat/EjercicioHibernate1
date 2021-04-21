@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class
+		name="EjercicioHibernate1.EjercicioHibernate1.entities.xmlmapping.Departamento"
+		table="departamento">
+		<id name="codigo" type="int">
+			<column name="codigo" />
+		</id>
+		<property generated="never" lazy="false" name="nombre"
+			type="java.lang.String">
+			<column name="nombre" />
+		</property>
+		<property generated="never" lazy="false"
+			name="codigoResponsable" type="int">
+			<column name="cod_responsable" />
+		</property>
+	</class>
+</hibernate-mapping>
