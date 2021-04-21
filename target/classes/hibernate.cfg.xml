@@ -5,9 +5,11 @@
 <hibernate-configuration>
 	<session-factory>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3440/empresa</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost/empresa</property>
     <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password">root</property>
+    <property name="hibernate.connection.password"></property>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <mapping resource="EjercicioHibernate1.EjercicioHibernate1.entities.xmlmapping.Departamento" />
+    <mapping resource="EjercicioHibernate1.EjercicioHibernate1.entities.xmlmapping.Empleado" />
 	</session-factory>
 </hibernate-configuration>

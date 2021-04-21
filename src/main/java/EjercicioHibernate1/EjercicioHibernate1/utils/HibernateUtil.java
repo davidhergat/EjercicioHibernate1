@@ -1,4 +1,4 @@
-package com.serbatic.course.datamodel.utils;
+package EjercicioHibernate1.EjercicioHibernate1.utils;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
