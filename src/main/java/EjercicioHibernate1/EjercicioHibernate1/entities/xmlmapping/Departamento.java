@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Departamento implements Serializable {
 
-	private int codigoDepartamento;
+	private int codigo;
 	private String nombre;
 	private int codigoResponsable;
 	
@@ -14,17 +14,17 @@ public class Departamento implements Serializable {
 
 	public Departamento(int codigoDepartamento, String nombre, int codigoResponsable) {
 		super();
-		this.codigoDepartamento = codigoDepartamento;
+		this.codigo = codigoDepartamento;
 		this.nombre = nombre;
 		this.codigoResponsable = codigoResponsable;
 	}
 
-	public int getCodigoDepartamento() {
-		return codigoDepartamento;
+	public int getCodigo() {
+		return codigo;
 	}
 
-	public void setCodigoDepartamento(int codigoDepartamento) {
-		this.codigoDepartamento = codigoDepartamento;
+	public void setCodigo(int codigoDepartamento) {
+		this.codigo = codigoDepartamento;
 	}
 
 	public String getNombre() {
@@ -45,7 +45,7 @@ public class Departamento implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Departamento [codigoDepartamento=" + codigoDepartamento + ", nombre=" + nombre + ", codigoResponsable="
+		return "Departamento [codigoDepartamento=" + codigo + ", nombre=" + nombre + ", codigoResponsable="
 				+ codigoResponsable + "]";
 	}
 	
