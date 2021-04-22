@@ -1,15 +1,18 @@
-package EjercicioHibernate1.EjercicioHibernate1.dao;
+package com.EjercicioHibernate1.dao;
+
+
 
 import java.util.List;
 
 import org.hibernate.Session;
 
-import EjercicioHibernate1.EjercicioHibernate1.entities.xmlmapping.Empleado;
-import EjercicioHibernate1.EjercicioHibernate1.utils.HibernateUtil;
+import com.EjercicioHibernate1.entities.xmlmapping.Empleado;
+import com.EjercicioHibernate1.utils.HibernateUtil;
+
 
 public class EmpleadoDAO {
 	
-	public static void insertarDepartamento(Session s, Empleado emp) {
+	public static void insertarEmpleado(Session s, Empleado emp) {
 		s.save(emp);
 	}
 	
@@ -29,12 +32,12 @@ public class EmpleadoDAO {
 		  return empleado;
 	}
 	
-	public static void borrarDepartamento(Session s, int codigo) {
+	public static void borrarEmpleado(Session s, int codigo) {
 		Empleado emp = getEmpleado(s, codigo);
 		s.delete(emp);
 	}
 	
-	public static void actualizarDepartamento(Session s, Empleado emp) {
+	public static void actualizarEmpleado(Session s, Empleado emp) {
 		s.update(emp);
 	}
 }

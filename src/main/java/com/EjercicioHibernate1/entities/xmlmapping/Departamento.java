@@ -1,4 +1,6 @@
-package EjercicioHibernate1.EjercicioHibernate1.entities.xmlmapping;
+package com.EjercicioHibernate1.entities.xmlmapping;
+
+
 
 import java.io.Serializable;
 

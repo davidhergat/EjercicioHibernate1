@@ -1,10 +1,12 @@
-package EjercicioHibernate1.EjercicioHibernate1.entities.xmlmapping;
+package com.EjercicioHibernate1.entities.xmlmapping;
+
+
 
 import java.io.Serializable;
 
 public class Empleado implements Serializable {
 
-	private int codigoEmpleado;
+	private int codigo;
 	private String nombre;
 	private String apellido1;
 	private String apellido2;
@@ -19,10 +21,10 @@ public class Empleado implements Serializable {
 		
 	}
 
-	public Empleado(int codigoEmpleado, String nombre, String apellido1, String apellido2, String lugarNacimiento,
+	public Empleado(int codigo, String nombre, String apellido1, String apellido2, String lugarNacimiento,
 			String fechaNacimiento, String direccion, String telefono, String puesto, int codigoDepartamento) {
 		super();
-		this.codigoEmpleado = codigoEmpleado;
+		this.codigo = codigo;
 		this.nombre = nombre;
 		this.apellido1 = apellido1;
 		this.apellido2 = apellido2;
@@ -35,11 +37,11 @@ public class Empleado implements Serializable {
 	}
 
 	public int getCodigoEmpleado() {
-		return codigoEmpleado;
+		return codigo;
 	}
 
-	public void setCodigoEmpleado(int codigoEmpleado) {
-		this.codigoEmpleado = codigoEmpleado;
+	public void setCodigo(int codigoEmpleado) {
+		this.codigo = codigoEmpleado;
 	}
 
 	public String getNombre() {
@@ -116,7 +118,7 @@ public class Empleado implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Empleado [codigoEmpleado=" + codigoEmpleado + ", nombre=" + nombre + ", apellido1=" + apellido1
+		return "Empleado [codigoEmpleado=" + codigo + ", nombre=" + nombre + ", apellido1=" + apellido1
 				+ ", apellido2=" + apellido2 + ", lugarNacimiento=" + lugarNacimiento + ", fechaNacimiento="
 				+ fechaNacimiento + ", direccion=" + direccion + ", telefono=" + telefono + ", puesto=" + puesto
 				+ ", codigoDepartamento=" + codigoDepartamento + "]";

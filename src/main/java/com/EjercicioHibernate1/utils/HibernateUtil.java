@@ -1,4 +1,6 @@
-package EjercicioHibernate1.EjercicioHibernate1.utils;
+package com.EjercicioHibernate1.utils;
+
+
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;

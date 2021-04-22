@@ -1,12 +1,15 @@
-package EjercicioHibernate1.EjercicioHibernate1.dao;
+package com.EjercicioHibernate1.dao;
+
+
 
 import java.util.List;
 
 import org.hibernate.Session;
 
-import EjercicioHibernate1.EjercicioHibernate1.utils.*;
+import com.EjercicioHibernate1.entities.xmlmapping.Departamento;
+import com.EjercicioHibernate1.utils.HibernateUtil;
 
-import EjercicioHibernate1.EjercicioHibernate1.entities.xmlmapping.Departamento;
+
 
 public class DepartamentoDAO {
 
